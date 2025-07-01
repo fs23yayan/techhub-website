@@ -7,10 +7,11 @@
     <link rel="stylesheet" href="styles/style.css">
 </head>
 <body>
+    <!-- Header berisi judul website dan navigasi utama -->
     <header>
         <div class="header-content">
-            <a href="#" class="logo">🚀 TechHub</a>
-            <nav>
+            <h1><a href="#" class="logo">🚀 TechHub Indonesia</a></h1>
+            <nav role="navigation" aria-label="Menu navigasi utama">
                 <ul>
                     <li><a href="#home">Beranda</a></li>
                     <li class="dropdown">
@@ -30,131 +31,152 @@
     </header>
 
     <div class="container">
+        <!-- Main berisi konten utama website -->
         <main>
-            <article>
-                <header>
-                    <h2>Revolusi AI dalam Pengembangan Web Modern</h2>
-                    <div class="article-meta">
-                        📅 30 Juni 2025 | 👤 Admin TechHub | 🏷️ Artificial Intelligence
+            <section aria-labelledby="main-articles">
+                <h2 id="main-articles" class="visually-hidden">Artikel Teknologi Terbaru</h2>
+                
+                <article>
+                    <header>
+                        <h1>Revolusi AI dalam Pengembangan Web Modern</h1>
+                        <div class="article-meta">
+                            <time datetime="2025-06-30">📅 30 Juni 2025</time> | 
+                            <address>👤 Admin TechHub</address> | 
+                            🏷️ Artificial Intelligence
+                        </div>
+                    </header>
+                    <div class="article-content">
+                        <p>Kecerdasan buatan (AI) telah mengubah cara kita mengembangkan aplikasi web. Dari code generation hingga automated testing, AI membantu developer meningkatkan produktivitas secara signifikan.</p>
+                        <p>Tools seperti GitHub Copilot, ChatGPT, dan Claude telah menjadi asisten programming yang sangat powerful. Mereka tidak hanya membantu menulis code, tetapi juga debugging, optimasi, dan dokumentasi.</p>
                     </div>
-                </header>
-                <div class="article-content">
-                    <p>Kecerdasan buatan (AI) telah mengubah cara kita mengembangkan aplikasi web. Dari code generation hingga automated testing, AI membantu developer meningkatkan produktivitas secara signifikan.</p>
-                    <p>Tools seperti GitHub Copilot, ChatGPT, dan Claude telah menjadi asisten programming yang sangat powerful. Mereka tidak hanya membantu menulis code, tetapi juga debugging, optimasi, dan dokumentasi.</p>
-                </div>
-                <a href="#" class="read-more">Baca Selengkapnya</a>
-            </article>
+                    <footer>
+                        <a href="#" class="read-more">Baca Selengkapnya</a>
+                    </footer>
+                </article>
 
-            <article>
-                <header>
-                    <h2>Framework JavaScript Terpopuler 2025</h2>
-                    <div class="article-meta">
-                        📅 28 Juni 2025 | 👤 Admin TechHub | 🏷️ Web Development
+                <article>
+                    <header>
+                        <h1>Framework JavaScript Terpopuler 2025</h1>
+                        <div class="article-meta">
+                            <time datetime="2025-06-28">📅 28 Juni 2025</time> | 
+                            <address>👤 Admin TechHub</address> | 
+                            🏷️ Web Development
+                        </div>
+                    </header>
+                    <div class="article-content">
+                        <p>React, Vue, dan Angular masih mendominasi landscape frontend development. Namun, framework baru seperti Svelte dan Solid.js mulai mendapat perhatian dengan pendekatan yang lebih ringan dan performa yang optimal.</p>
+                        <p>Pemilihan framework yang tepat sangat bergantung pada kebutuhan proyek, kompleksitas aplikasi, dan preferensi tim development.</p>
                     </div>
-                </header>
-                <div class="article-content">
-                    <p>React, Vue, dan Angular masih mendominasi landscape frontend development. Namun, framework baru seperti Svelte dan Solid.js mulai mendapat perhatian dengan pendekatan yang lebih ringan dan performa yang optimal.</p>
-                    <p>Pemilihan framework yang tepat sangat bergantung pada kebutuhan proyek, kompleksitas aplikasi, dan preferensi tim development.</p>
-                </div>
-                <a href="#" class="read-more">Baca Selengkapnya</a>
-            </article>
+                    <footer>
+                        <a href="#" class="read-more">Baca Selengkapnya</a>
+                    </footer>
+                </article>
 
-            <article>
-                <header>
-                    <h2>Keamanan Cyber di Era Digital</h2>
-                    <div class="article-meta">
-                        📅 25 Juni 2025 | 👤 Admin TechHub | 🏷️ Cybersecurity
+                <article>
+                    <header>
+                        <h1>Keamanan Cyber di Era Digital</h1>
+                        <div class="article-meta">
+                            <time datetime="2025-06-25">📅 25 Juni 2025</time> | 
+                            <address>👤 Admin TechHub</address> | 
+                            🏷️ Cybersecurity
+                        </div>
+                    </header>
+                    <div class="article-content">
+                        <p>Ancaman keamanan cyber semakin kompleks seiring berkembangnya teknologi. Zero-trust architecture dan implementasi multi-factor authentication menjadi standar baru dalam mengamankan aplikasi dan data.</p>
+                        <p>Developer perlu memahami prinsip-prinsip security by design untuk membangun aplikasi yang aman dari berbagai ancaman cyber.</p>
                     </div>
-                </header>
-                <div class="article-content">
-                    <p>Ancaman keamanan cyber semakin kompleks seiring berkembangnya teknologi. Zero-trust architecture dan implementasi multi-factor authentication menjadi standar baru dalam mengamankan aplikasi dan data.</p>
-                    <p>Developer perlu memahami prinsip-prinsip security by design untuk membangun aplikasi yang aman dari berbagai ancaman cyber.</p>
-                </div>
-                <a href="#" class="read-more">Baca Selengkapnya</a>
-            </article>
+                    <footer>
+                        <a href="#" class="read-more">Baca Selengkapnya</a>
+                    </footer>
+                </article>
+            </section>
         </main>
 
-        <aside>
-            <div class="profile-section">
-                <div class="profile-image">
-                    👨‍💻
-                </div>
-                <div class="profile-name">Budi Santoso</div>
-                <div class="profile-title">Senior Full-Stack Developer</div>
-            </div>
+        <!-- Aside berisi informasi tambahan dan profil -->
+        <aside role="complementary" aria-label="Informasi profil dan teknologi">
+            <section class="profile-section">
+                <h2>Profil Developer</h2>
+                <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=300&h=300&fit=crop&crop=face" 
+                     alt="Foto profil Budi Santoso - Senior Full-Stack Developer" 
+                     class="profile-image"
+                     loading="lazy">
+                <h3 class="profile-name">Budi Santoso</h3>
+                <p class="profile-title">Senior Full-Stack Developer</p>
+            </section>
 
-            <div class="bio-info">
-                <h3>📋 Biodata</h3>
+            <section class="bio-info">
+                <h2>📋 Biodata</h2>
                 <div class="bio-item">
-                    <span class="bio-icon">🎓</span>
+                    <span class="bio-icon" aria-hidden="true">🎓</span>
                     <span>S.Kom - Teknik Informatika</span>
                 </div>
                 <div class="bio-item">
-                    <span class="bio-icon">💼</span>
+                    <span class="bio-icon" aria-hidden="true">💼</span>
                     <span>7+ Tahun Pengalaman</span>
                 </div>
                 <div class="bio-item">
-                    <span class="bio-icon">🌐</span>
+                    <span class="bio-icon" aria-hidden="true">🌐</span>
                     <span>JavaScript, Python, Go</span>
                 </div>
                 <div class="bio-item">
-                    <span class="bio-icon">📧</span>
+                    <span class="bio-icon" aria-hidden="true">📧</span>
                     <span>budi@techhub.id</span>
                 </div>
                 <div class="bio-item">
-                    <span class="bio-icon">📍</span>
+                    <span class="bio-icon" aria-hidden="true">📍</span>
                     <span>Jakarta, Indonesia</span>
                 </div>
-            </div>
+            </section>
 
-            <div class="tech-slider">
-                <h3>💡 Teknologi Favorit</h3>
-                <div class="slider-container">
+            <section class="tech-section">
+                <h2>💡 Teknologi Favorit</h2>
+                <div class="slider-container" role="region" aria-label="Slider teknologi favorit">
                     <div class="slider-track" id="sliderTrack">
                         <div class="slide">
                             <div>
-                                <h4>React.js</h4>
+                                <h3>React.js</h3>
                                 <p>Library JavaScript untuk membangun user interface yang interaktif dan modern</p>
                             </div>
                         </div>
                         <div class="slide">
                             <div>
-                                <h4>Node.js</h4>
+                                <h3>Node.js</h3>
                                 <p>Runtime JavaScript untuk backend development yang scalable dan efficient</p>
                             </div>
                         </div>
                         <div class="slide">
                             <div>
-                                <h4>MongoDB</h4>
+                                <h3>MongoDB</h3>
                                 <p>NoSQL database yang fleksibel untuk aplikasi modern dengan data kompleks</p>
                             </div>
                         </div>
                         <div class="slide">
                             <div>
-                                <h4>Docker</h4>
+                                <h3>Docker</h3>
                                 <p>Containerization platform untuk deployment yang konsisten di berbagai environment</p>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="slider-nav" id="sliderNav">
-                    <span class="slider-dot active" data-slide="0"></span>
-                    <span class="slider-dot" data-slide="1"></span>
-                    <span class="slider-dot" data-slide="2"></span>
-                    <span class="slider-dot" data-slide="3"></span>
-                </div>
-            </div>
+                <nav class="slider-nav" role="tablist" aria-label="Navigasi slider">
+                    <button class="slider-dot active" data-slide="0" role="tab" aria-selected="true" aria-label="React.js"></button>
+                    <button class="slider-dot" data-slide="1" role="tab" aria-selected="false" aria-label="Node.js"></button>
+                    <button class="slider-dot" data-slide="2" role="tab" aria-selected="false" aria-label="MongoDB"></button>
+                    <button class="slider-dot" data-slide="3" role="tab" aria-selected="false" aria-label="Docker"></button>
+                </nav>
+            </section>
         </aside>
     </div>
 
-    <footer>
+    <!-- Footer berisi informasi kontak dan copyright -->
+    <footer role="contentinfo">
         <div class="footer-content">
-            <div class="social-links">
-                <a href="#" title="GitHub">🐙</a>
-                <a href="#" title="LinkedIn">💼</a>
-                <a href="#" title="Twitter">🐦</a>
-                <a href="#" title="Instagram">📷</a>
-            </div>
+            <nav class="social-links" aria-label="Media sosial">
+                <a href="#" title="GitHub" aria-label="Kunjungi GitHub kami">🐙</a>
+                <a href="#" title="LinkedIn" aria-label="Kunjungi LinkedIn kami">💼</a>
+                <a href="#" title="Twitter" aria-label="Kunjungi Twitter kami">🐦</a>
+                <a href="#" title="Instagram" aria-label="Kunjungi Instagram kami">📷</a>
+            </nav>
             <p>&copy; 2025 TechHub Indonesia. Dibuat dengan ❤️ untuk komunitas developer Indonesia.</p>
             <p>Portal teknologi terpercaya untuk mengikuti perkembangan dunia programming dan teknologi terkini.</p>
         </div>

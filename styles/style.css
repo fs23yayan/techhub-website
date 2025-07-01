@@ -11,6 +11,19 @@ body {
     min-height: 100vh;
 }
 
+/* Utility Classes */
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+}
+
 /* Header Styles */
 header {
     background: rgba(255, 255, 255, 0.95);
@@ -29,6 +42,10 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 0 2rem;
+}
+
+header h1 {
+    margin: 0;
 }
 
 .logo {
@@ -140,7 +157,7 @@ article header {
     margin-bottom: 1rem;
 }
 
-article h2 {
+article h1 {
     color: #2d3748;
     font-size: 1.8rem;
     margin-bottom: 0.5rem;
@@ -150,6 +167,11 @@ article h2 {
     color: #718096;
     font-size: 0.9rem;
     margin-bottom: 1rem;
+}
+
+.article-meta address {
+    display: inline;
+    font-style: normal;
 }
 
 .article-content {
@@ -181,18 +203,23 @@ article h2 {
     margin-bottom: 2rem;
 }
 
+.profile-section h2 {
+    color: #2d3748;
+    margin-bottom: 1rem;
+    border-bottom: 2px solid #667eea;
+    padding-bottom: 0.5rem;
+    font-size: 1.2rem;
+}
+
 .profile-image {
     width: 150px;
     height: 150px;
     border-radius: 50%;
-    background: linear-gradient(135deg, #667eea, #764ba2);
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    object-fit: cover;
     margin: 0 auto 1rem;
-    font-size: 3rem;
-    color: white;
     box-shadow: 0 8px 25px rgba(102, 126, 234, 0.3);
+    border: 4px solid #667eea;
+    display: block;
 }
 
 .profile-name {
@@ -209,13 +236,15 @@ article h2 {
 
 .bio-info {
     text-align: left;
+    margin-bottom: 2rem;
 }
 
-.bio-info h3 {
+.bio-info h2 {
     color: #2d3748;
     margin-bottom: 1rem;
     border-bottom: 2px solid #667eea;
     padding-bottom: 0.5rem;
+    font-size: 1.2rem;
 }
 
 .bio-item {
@@ -234,9 +263,17 @@ article h2 {
     color: #667eea;
 }
 
-/* Slider Styles */
-.tech-slider {
+/* Tech Section */
+.tech-section {
     margin-top: 2rem;
+}
+
+.tech-section h2 {
+    color: #2d3748;
+    margin-bottom: 1rem;
+    border-bottom: 2px solid #667eea;
+    padding-bottom: 0.5rem;
+    font-size: 1.2rem;
 }
 
 .slider-container {
@@ -265,6 +302,11 @@ article h2 {
     padding: 2rem;
 }
 
+.slide h3 {
+    font-size: 1.4rem;
+    margin-bottom: 0.5rem;
+}
+
 .slider-nav {
     display: flex;
     justify-content: center;
@@ -277,12 +319,22 @@ article h2 {
     height: 12px;
     border-radius: 50%;
     background: #cbd5e0;
+    border: none;
     cursor: pointer;
     transition: background 0.3s ease;
 }
 
 .slider-dot.active {
     background: #667eea;
+}
+
+.slider-dot:hover {
+    background: #667eea;
+}
+
+.slider-dot:focus {
+    outline: 2px solid #667eea;
+    outline-offset: 2px;
 }
 
 /* Footer */
@@ -344,14 +396,13 @@ footer {
         padding: 1.5rem;
     }
 
-    article h2 {
+    article h1 {
         font-size: 1.5rem;
     }
 
     .profile-image {
         width: 120px;
         height: 120px;
-        font-size: 2.5rem;
     }
 
     .dropdown-content {
@@ -385,5 +436,13 @@ footer {
 
     .social-links {
         flex-wrap: wrap;
+    }
+
+    .logo {
+        font-size: 1.5rem;
+    }
+
+    article h1 {
+        font-size: 1.3rem;
     }
 }
